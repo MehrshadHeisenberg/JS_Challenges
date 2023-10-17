@@ -1,0 +1,60 @@
+.container {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+  margin-top: 90px;
+  justify-content: center;
+  z-index: 20;
+}
+.img-container-1,
+.img-container-2,
+.img-container-3 {
+  width: 150px;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  border-radius: 90px;
+  transition: all 400ms;
+  cursor: pointer;
+}
+.img-container-1 {
+  background-image: url("../images/andrew-lincoln-1.jpg");
+}
+.img-container-2 {
+  background-image: url("../images/andrew-lincoln-2.jpg");
+}
+.img-container-3 {
+  background-image: url("../images/andrew-lincoln-3.jpg");
+}
+.images {
+  height: 500px;
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  gap: 10px;
+}
+.ind {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(113, 113, 198);
+  border: none;
+  border-radius: 50%;
+  transition: all 300ms;
+  cursor: pointer;
+}
+.active-img {
+  width: 240px;
+  border-radius: 50px;
+}
+.indicators {
+  margin: 15px auto;
+  cursor: context-menu;
+}
+.active-ind {
+  width: 20px;
+  border-radius: 30%;
+}
