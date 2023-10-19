@@ -1,4 +1,4 @@
-# Title: "Lucky Number Finder"
+# Lucky Number Finder
 
 # Challenge Description:
 
