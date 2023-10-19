@@ -13,6 +13,7 @@ describe("Multiplication function", () => {
     [1, 2, 3, 4, 5, 6, 7, 8, 9],
     [10, 20, 30, 40, 50],
     [7, 77, 777, 7777],
+    [1, 2, 3, 24127, 901, 1283],
   ];
 
   // Iterate over each JavaScript file and run the tests
