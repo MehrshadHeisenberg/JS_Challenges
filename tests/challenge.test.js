@@ -10,10 +10,30 @@ describe("Multiplication function", () => {
 
   // Define the test cases
   const testCases = [
-    [1, 2, 3, 4, 5, 6, 7, 8, 9],
-    [10, 20, 30, 40, 50],
-    [7, 77, 777, 7777],
-    [1, 2, 3, 24127, 901, 1283],
+    [
+      [
+        { name: "John", age: 25, salary: 2500 },
+        { name: "Alice", age: 30, salary: 3500 },
+        { name: "Bob", age: 35, salary: 4500 },
+      ],
+      "salary",
+    ],
+    [
+      [
+        { product: "Apple", price: "2" },
+        { product: "Banana", price: "1.5" },
+        { product: "Orange", price: "3" },
+      ],
+      "price",
+    ],
+    [
+      [
+        { name: "John", score: "75" },
+        { name: "Alice", score: "80" },
+        { name: "Bob", score: "90" },
+      ],
+      "score",
+    ],
   ];
 
   // Iterate over each JavaScript file and run the tests
@@ -22,7 +42,7 @@ describe("Multiplication function", () => {
 
     testCases.forEach((input, index) => {
       test(`Test case ${index + 1} in ${file}`, () => {
-        expect(answer(input)).toEqual(myFunc(input));
+        expect(answer(...input)).toEqual(myFunc(...input));
       });
     });
   });

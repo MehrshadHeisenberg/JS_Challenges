@@ -1,11 +1,13 @@
 "use strict";
 
-function find7(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    if ((arr[i] + "").includes("7")) return arr[i];
+function calculatePropertySum(objects, property) {
+  let sum = 0;
+  for (let obj of objects) {
+    if (obj.hasOwnProperty(property)) {
+      sum += Number(obj[property]);
+    }
   }
-
-  return -1;
+  return sum;
 }
 
-module.exports = find7;
+module.exports = calculatePropertySum;

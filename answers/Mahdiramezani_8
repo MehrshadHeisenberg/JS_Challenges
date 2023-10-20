@@ -1,3 +1,0 @@
-const findSeven = (arr) => (arr.includes(7) ? 7 : -1);
-
-module.exports = findSeven
