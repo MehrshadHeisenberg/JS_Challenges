@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const myFunc = require("../js_challenges");
 
-describe("Multiplication function", () => {
+describe("Not important", () => {
   // Get the list of JavaScript files in the answers folder
   const answersFolder = path.join(__dirname, "../answers");
   const answerFiles = fs.readdirSync(answersFolder);
