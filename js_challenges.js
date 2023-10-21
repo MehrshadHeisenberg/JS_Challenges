@@ -1,13 +1,15 @@
 "use strict";
 
-function calculatePropertySum(objects, property) {
-  let sum = 0;
-  for (let obj of objects) {
-    if (obj.hasOwnProperty(property)) {
-      sum += Number(obj[property]);
+function findArrayIntersection(arr1, arr2) {
+  const intersection = [];
+
+  for (const num of arr1) {
+    if (arr2.includes(num)) {
+      intersection.push(num);
     }
   }
-  return sum;
+
+  return intersection;
 }
 
-module.exports = calculatePropertySum;
+module.exports = findArrayIntersection;

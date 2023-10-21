@@ -1,41 +1,35 @@
-# Property Calculator
+# Find similarities in arrays
 
 ## Challenge Description:
 
-Create a function that takes in an array of objects and a property name. The function should calculate the sum of all the values of the specified property across the objects in the array. The values can be numbers or strings that can be converted to numbers.
+Your task is to create a JavaScript function that finds the intersection of two arrays. The intersection of two arrays contains the elements that are common to both arrays.
 
-This challenge tests your understanding of objects, array manipulation, and basic arithmetic operations in JavaScript.
+Your function should accept two arrays as input and return a new array containing the elements that appear in both arrays. The order of elements in the resulting array is not important.
 
-## Website Use:
-
-This function can be useful on websites or applications that involve data analysis or financial calculations. It can be used to calculate totals or aggregate values based on specific properties across multiple objects.
+For example, given the input arrays [1, 2, 3, 4] and [3, 4, 5, 6], the function should return [3, 4] since these are the elements that appear in both arrays.
 
 ## Difficulty: Medium
 
 ## Tests:
 
 ```
-Array of Objects:
-[
-  { name: 'John', age: 25, salary: 2500 },
-  { name: 'Alice', age: 30, salary: 3500 },
-  { name: 'Bob', age: 35, salary: 4500 }
-]
-Property: 'salary' => Output: 10500
+Test 1:
+Input: [1, 2, 3, 4], [3, 4, 5, 6]
+Expected Output: [3, 4]
 
-Array of Objects:
-[
-  { product: 'Apple', price: '2' },
-  { product: 'Banana', price: '1.5' },
-  { product: 'Orange', price: '3' }
-]
-Property: 'price' => Output: 6.5
+Test 2:
+Input: [1, 2, 3, 4, 5], [6, 7, 8, 9]
+Expected Output: []
 
-Array of Objects:
-[
-  { name: 'John', score: '75' },
-  { name: 'Alice', score: '80' },
-  { name: 'Bob', score: '90' }
-]
-Property: 'score' => Output: 245
+Test 3:
+Input: [1, 2, 3, 4], [1, 2, 3, 4]
+Expected Output: [1, 2, 3, 4]
+
+Test 4:
+Input: [5, 6, 7], [8, 9, 10]
+Expected Output: []
+
+Test 5:
+Input: [1, 2, 3], [2, 3, 4]
+Expected Output: [2, 3]
 ```

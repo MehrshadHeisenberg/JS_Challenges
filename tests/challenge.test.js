@@ -11,28 +11,24 @@ describe("Not important", () => {
   // Define the test cases
   const testCases = [
     [
-      [
-        { name: "John", age: 25, salary: 2500 },
-        { name: "Alice", age: 30, salary: 3500 },
-        { name: "Bob", age: 35, salary: 4500 },
-      ],
-      "salary",
+      [1, 2, 3, 4],
+      [3, 4, 5, 6],
     ],
     [
-      [
-        { product: "Apple", price: "2" },
-        { product: "Banana", price: "1.5" },
-        { product: "Orange", price: "3" },
-      ],
-      "price",
+      [1, 2, 3, 4, 5],
+      [6, 7, 8, 9],
     ],
     [
-      [
-        { name: "John", score: "75" },
-        { name: "Alice", score: "80" },
-        { name: "Bob", score: "90" },
-      ],
-      "score",
+      [1, 2, 3, 4],
+      [1, 2, 3, 4],
+    ],
+    [
+      [5, 6, 7],
+      [8, 9, 10],
+    ],
+    [
+      [1, 2, 3],
+      [2, 3, 4],
     ],
   ];
 
