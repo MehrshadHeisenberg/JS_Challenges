@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  height: 100vh;
+  background-color: #bbb;
+}
+
+.img-box {
+  width: 55rem;
+  height: 55rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 4rem rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.img-box:hover .img {
+  transform: scale(1.5);
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
