@@ -1,0 +1,65 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  height: 100vh;
+  background-color: #bbb;
+  font-family: cursive;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.tab {
+  border-radius: 5rem;
+  background-color: rgba(0, 0, 0, 0.671);
+  color: white;
+  padding: 2rem 4rem;
+  font-size: 3rem;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.tab:hover {
+  cursor: pointer;
+}
+
+.tab.selected {
+  transform: scale(1.1);
+  background-color: green;
+}
+
+.tab-content {
+  width: 50rem;
+  height: 20rem;
+}
+
+.tab-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.tab-exp {
+  font-size: 2rem;
+}
