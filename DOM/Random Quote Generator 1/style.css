@@ -1,0 +1,76 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  height: 100vh;
+  background-color: #bbb;
+  font-family: cursive;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.author {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+.select-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.select,
+.btn {
+  font-family: inherit;
+  border: none;
+  outline: none;
+  border-radius: 1.5rem;
+  padding: 1rem 2rem;
+  font-size: 3rem;
+  background-color: blue;
+  color: white;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  background-color: rgb(9, 103, 9);
+  margin: 0 auto;
+}
+
+.btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote {
+  width: 50rem;
+}
