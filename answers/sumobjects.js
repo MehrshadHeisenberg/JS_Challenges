@@ -1,3 +1,5 @@
+"use strict"
+
 const sumup = (objects , propertyName) =>{
   let sum = 0 
 
@@ -12,3 +14,5 @@ const sumup = (objects , propertyName) =>{
   }
   return sum
 }
+
+module.exports = sumup;
