@@ -1,15 +1,23 @@
 "use strict";
 
-function findArrayIntersection(arr1, arr2) {
-  const intersection = [];
+function findMostFrequentElement(arr) {
+  let frequencyMap = new Map();
+  let maxFrequency = 0;
+  let mostFrequentElement;
 
-  for (const num of arr1) {
-    if (arr2.includes(num)) {
-      intersection.push(num);
+  for (let i = 0; i < arr.length; i++) {
+    const element = arr[i];
+    let frequency = frequencyMap.get(element) || 0;
+    frequency++;
+    frequencyMap.set(element, frequency);
+
+    if (frequency > maxFrequency) {
+      maxFrequency = frequency;
+      mostFrequentElement = element;
     }
   }
 
-  return intersection;
+  return mostFrequentElement;
 }
 
-module.exports = findArrayIntersection;
+module.exports = findMostFrequentElement;

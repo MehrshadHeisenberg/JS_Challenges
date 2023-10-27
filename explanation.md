@@ -1,12 +1,12 @@
-# Find similarities in arrays
+# The most frequent array element
 
 ## Challenge Description:
 
-Your task is to create a JavaScript function that finds the intersection of two arrays. The intersection of two arrays contains the elements that are common to both arrays.
+Challenge Title: Most Frequent Element Finder
 
-Your function should accept two arrays as input and return a new array containing the elements that appear in both arrays. The order of elements in the resulting array is not important.
+Challenge Description: You are tasked with creating a function that finds the most frequent element in an array. The function should take an array of elements as input and return the element that occurs the most frequently.
 
-For example, given the input arrays [1, 2, 3, 4] and [3, 4, 5, 6], the function should return [3, 4] since these are the elements that appear in both arrays.
+If there are multiple elements with the same highest frequency, the function should return the one that appears first in the array.
 
 ## Difficulty: Medium
 
@@ -14,22 +14,18 @@ For example, given the input arrays [1, 2, 3, 4] and [3, 4, 5, 6], the function 
 
 ```
 Test 1:
-Input: [1, 2, 3, 4], [3, 4, 5, 6]
-Expected Output: [3, 4]
+Input: [1, 2, 3, 2, 4, 2, 5]
+Expected Output: 2
 
 Test 2:
-Input: [1, 2, 3, 4, 5], [6, 7, 8, 9]
-Expected Output: []
+Input: ["apple", "banana", "banana", "apple", "cherry", "apple"]
+Expected Output: "apple"
 
 Test 3:
-Input: [1, 2, 3, 4], [1, 2, 3, 4]
-Expected Output: [1, 2, 3, 4]
+Input: [true, true, false, false, true]
+Expected Output: true
 
 Test 4:
-Input: [5, 6, 7], [8, 9, 10]
-Expected Output: []
-
-Test 5:
-Input: [1, 2, 3], [2, 3, 4]
-Expected Output: [2, 3]
+Input: [1, 2, 3, 4, 5]
+Expected Output: 1
 ```
