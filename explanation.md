@@ -4,7 +4,7 @@
 
 Write a function called `dateDifference` that takes two input parameters `startDate` and `endDate`, representing two dates, and returns the difference between the two dates in days. The function should calculate the number of days between the `startDate` and `endDate`, inclusive of both dates.
 
-## Difficulty: Medium
+## Difficulty: Easy
 
 ## Tests:
 
