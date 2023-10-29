@@ -10,10 +10,10 @@ describe("Not important", () => {
 
   // Define the test cases
   const testCases = [
-    [1, 2, 3, 2, 4, 2, 5],
-    ["apple", "banana", "banana", "apple", "cherry", "apple"],
-    [true, true, false, false, true],
-    [1, 2, 3, 4, 5],
+    ["2023-01-01", "2023-01-05"],
+    ["2023-02-01", "2023-02-28"],
+    ["2023-12-25", "2024-01-01"],
+    ["2023-09-10", "2023-09-10"],
   ];
 
   // Iterate over each JavaScript file and run the tests
@@ -22,7 +22,7 @@ describe("Not important", () => {
 
     testCases.forEach((input, index) => {
       test(`Test case ${index + 1} in ${file}`, () => {
-        expect(answer(input)).toEqual(myFunc(input));
+        expect(answer(...input)).toEqual(myFunc(...input));
       });
     });
   });

@@ -1,23 +1,12 @@
 "use strict";
 
-function findMostFrequentElement(arr) {
-  let frequencyMap = new Map();
-  let maxFrequency = 0;
-  let mostFrequentElement;
+function dateDifference(startDate, endDate) {
+  const oneDay = 24 * 60 * 60 * 1000; // Number of milliseconds in one day
+  const start = new Date(startDate);
+  const end = new Date(endDate);
+  const differenceInDays = Math.round(Math.abs((end - start) / oneDay));
 
-  for (let i = 0; i < arr.length; i++) {
-    const element = arr[i];
-    let frequency = frequencyMap.get(element) || 0;
-    frequency++;
-    frequencyMap.set(element, frequency);
-
-    if (frequency > maxFrequency) {
-      maxFrequency = frequency;
-      mostFrequentElement = element;
-    }
-  }
-
-  return mostFrequentElement;
+  return differenceInDays;
 }
 
-module.exports = findMostFrequentElement;
+module.exports = dateDifference;

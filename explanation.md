@@ -1,12 +1,8 @@
-# The most frequent array element
+# Date Difference Calculator
 
 ## Challenge Description:
 
-Challenge Title: Most Frequent Element Finder
-
-Challenge Description: You are tasked with creating a function that finds the most frequent element in an array. The function should take an array of elements as input and return the element that occurs the most frequently.
-
-If there are multiple elements with the same highest frequency, the function should return the one that appears first in the array.
+Write a function called `dateDifference` that takes two input parameters `startDate` and `endDate`, representing two dates, and returns the difference between the two dates in days. The function should calculate the number of days between the `startDate` and `endDate`, inclusive of both dates.
 
 ## Difficulty: Medium
 
@@ -14,18 +10,18 @@ If there are multiple elements with the same highest frequency, the function sho
 
 ```
 Test 1:
-Input: [1, 2, 3, 2, 4, 2, 5]
-Expected Output: 2
+Input: startDate = '2023-01-01', endDate = '2023-01-05'
+Output: 4
 
 Test 2:
-Input: ["apple", "banana", "banana", "apple", "cherry", "apple"]
-Expected Output: "apple"
+startDate = '2023-02-01', endDate = '2023-02-28'
+Output: 27
 
 Test 3:
-Input: [true, true, false, false, true]
-Expected Output: true
+startDate = '2023-12-25', endDate = '2024-01-01'
+Output: 7
 
 Test 4:
-Input: [1, 2, 3, 4, 5]
-Expected Output: 1
+startDate = '2023-09-10', endDate = '2023-09-10'
+Output: 0
 ```
