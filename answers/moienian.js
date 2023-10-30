@@ -1,6 +1,4 @@
 function findLuckyNumber(numbers) {
-  numbers.map((number) => {
-return number.toString().includes('7') ? number : -1
-  })
+  return arr.find((item) => item.toString().includes('7')) ? '7' : -1
 }
 module.exports = findLuckyNumber;
