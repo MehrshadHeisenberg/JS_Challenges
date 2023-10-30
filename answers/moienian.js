@@ -3,4 +3,4 @@ function findLuckyNumber(numbers) {
 if number.toString().includes(number) {return number} else {return -1}
   })
 }
-module.export = findLuckyNumber;
+module.exports = findLuckyNumber;
