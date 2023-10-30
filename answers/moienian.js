@@ -1,4 +1,7 @@
+"use strict"
+
 function findLuckyNumber(arr) {
-  return arr.find((item) => item.toString().includes('7')) ? '7' : -1
+  const find =  arr.find((item) => item.toString().includes('7'))
+  return find || -1
 }
 module.exports = findLuckyNumber;
