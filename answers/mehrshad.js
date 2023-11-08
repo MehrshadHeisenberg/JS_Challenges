@@ -1,4 +1,3 @@
-
 "use strict"
-const finder = () => (myArray = myArray.filter((el) => !toRemove.includes(el)));
+const finder = (myArray ,toRemove) => (myArray = myArray.filter((el) => !toRemove.includes(el)));
 module.exports = finder;
