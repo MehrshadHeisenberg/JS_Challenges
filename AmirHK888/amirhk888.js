@@ -11,3 +11,4 @@ const customArrayDiff = (a, b) => {
 }
 
 console.log(customArrayDiff(A, B));
+console.log(customArrayDiff([9, 8, 1, 5, -9, 50, 33], [3, 8, 5]));
