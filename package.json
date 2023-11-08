@@ -4,5 +4,8 @@
   },
   "devDependencies": {
     "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "generate-password": "^1.7.1"
   }
 }
