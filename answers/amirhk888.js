@@ -1,9 +1,11 @@
 "use strict";
 
 const converter = (txt) => {
-    return txt.split(",")
+    txt = txt.split(",")
     .map(x => `#${x.trim()}`)
     .join(" ");
+
+    return txt;
 }
 
 module.exports = converter;
