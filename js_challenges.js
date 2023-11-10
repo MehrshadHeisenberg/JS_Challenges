@@ -1,7 +1,20 @@
 "use strict";
 
-function customArrayDiff(a, b) {
-  return a.filter((value) => !b.includes(value));
+function createHashtags(input) {
+  if (input === "") {
+    return "";
+  }
+
+  const words = input.split(",");
+  const hashtags = [];
+
+  for (let i = 0; i < words.length; i++) {
+    const word = words[i].trim();
+    const hashtag = "#" + word;
+    hashtags.push(hashtag);
+  }
+
+  return hashtags.join(" ");
 }
 
-module.exports = customArrayDiff;
+module.exports = createHashtags;

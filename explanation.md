@@ -2,7 +2,7 @@
 
 ## Challenge Description:
 
-Your goal in this JavaScript challenge is to implement a function called `customArrayDiff(a, b)`, which takes in two arrays `a` and `b`. The function should remove all values from `a` that are present in `b`, while preserving the order of the elements in `a`. The function should then return the modified array `a`.
+Write a JavaScript function that takes a string of comma-separated words as input and returns a string of hashtags. Each word should be preceded by the '#' symbol. The function should handle different scenarios such as empty input, input with leading/trailing whitespace, and input with varying number of words.
 
 ## Difficulty: Easy to Medium
 
@@ -10,18 +10,18 @@ Your goal in this JavaScript challenge is to implement a function called `custom
 
 ```
 Test 1:
-Inputs: [], []
-Output: []
+Input: "programming, binary, web_development"
+Output: "#programming #binary #web_development"
 
 Test 2:
-Inputs = [1, 2, 3, 4, 5], []
-Output: [1, 2, 3, 4, 5]
+Input: "coding"
+Output: "#coding"
 
 Test 3:
-Inputs = [1, 2, 3, 4, 5], [2, 4]
-Output: [1, 3, 5]
+Input: " python, javascript, html "
+Output: "#python #javascript #html"
 
 Test 4:
-Inputs = [1, 2, 2, 2, 3], [2]
-Output: [1, 3]
+Input: ""
+Output: ""
 ```
