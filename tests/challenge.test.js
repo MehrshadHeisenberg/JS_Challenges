@@ -10,21 +10,10 @@ describe("Not important", () => {
 
   // Define the test cases
   const testCases = [
-    [[], []],
-    [[1, 2, 3, 4, 5], []],
-    [[], [1, 2, 3, 4, 5]],
-    [
-      [1, 2, 3, 4, 5],
-      [6, 7, 8],
-    ],
-    [
-      [1, 2, 3, 4, 5],
-      [2, 4],
-    ],
-    [
-      [1, 2, 3, 4, 5],
-      [1, 2, 3, 4, 5],
-    ],
+    "programming, binary, web_development",
+    "coding",
+    " python, javascript, html ",
+    "",
   ];
 
   // Iterate over each JavaScript file and run the tests
@@ -33,7 +22,7 @@ describe("Not important", () => {
 
     testCases.forEach((input, index) => {
       test(`Test case ${index + 1} in ${file}`, () => {
-        expect(answer(...input)).toEqual(myFunc(...input));
+        expect(answer(input)).toEqual(myFunc(input));
       });
     });
   });
