@@ -1,17 +1,17 @@
 "use strict";
 
 function calculateTotalPrice(cartItems, taxRate, discount) {
-  let totalPrice = 0;
+  const totalWithoutTaxDiscount = cartItems.reduce(
+    (sum, item) => sum + item.price * item.quantity,
+    0
+  );
 
-  for (const item of cartItems) {
-    const itemPrice = item.price * item.quantity;
-    totalPrice += itemPrice;
-  }
+  const totalWithTax =
+    totalWithoutTaxDiscount * taxRate + totalWithoutTaxDiscount;
 
-  totalPrice += totalPrice * taxRate;
-  totalPrice -= totalPrice * discount;
+  const totalPrice = totalWithTax - totalWithTax * discount;
 
-  return totalPrice;
+  return +totalPrice.toFixed(1);
 }
 
 module.exports = calculateTotalPrice;

@@ -12,7 +12,7 @@ function calculateTotalPrice(cartItems, taxRate, discount) {
   totalPrice += totalPrice * taxRate;
   totalPrice -= totalPrice * discount;
 
-  return totalPrice;
+  return +totalPrice.toFixed(1);
 }
 
 module.exports = calculateTotalPrice;
