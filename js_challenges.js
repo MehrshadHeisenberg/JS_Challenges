@@ -14,4 +14,4 @@ function calculateTotalPrice(cartItems, taxRate, discount) {
   return totalPrice;
 }
 
-module.exports = createHashtags;
+module.exports = calculateTotalPrice;
