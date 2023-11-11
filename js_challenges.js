@@ -1,20 +1,17 @@
 "use strict";
 
-function createHashtags(input) {
-  if (input === "") {
-    return "";
+function calculateTotalPrice(cartItems, taxRate, discount) {
+  let totalPrice = 0;
+
+  for (const item of cartItems) {
+    const itemPrice = item.price * item.quantity;
+    totalPrice += itemPrice;
   }
 
-  const words = input.split(",");
-  const hashtags = [];
+  totalPrice += totalPrice * taxRate;
+  totalPrice -= totalPrice * discount;
 
-  for (let i = 0; i < words.length; i++) {
-    const word = words[i].trim();
-    const hashtag = "#" + word;
-    hashtags.push(hashtag);
-  }
-
-  return hashtags.join(" ");
+  return totalPrice;
 }
 
 module.exports = createHashtags;
