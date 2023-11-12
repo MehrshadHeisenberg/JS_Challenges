@@ -3,6 +3,7 @@ const hashGnerator = (str) =>
     .split(",")
     .map((w) => w.replace(" ", ""))
     .map((w) => `#${w}`)
-    .join(" ");
+    .join(" ")
+    .trim();
 
 module.exports = hashGnerator;
