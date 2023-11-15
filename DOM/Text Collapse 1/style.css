@@ -1,0 +1,76 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100vh;
+  font-family: cursive;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+p {
+  font-size: 2.5rem;
+  width: 70rem;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.btn {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  cursor: pointer;
+
+  background-color: green;
+  transform: rotate(180deg);
+}
+
+.btn.open {
+  background-color: red;
+  transform: rotate(0deg);
+}
+
+.btn:hover {
+  transform: rotate(180deg) scale(1.1);
+}
+
+.btn.open:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  width: 90%;
+  height: auto;
+}
